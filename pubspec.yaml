@@ -24,6 +24,7 @@ flutter:
 
   assets:
     - assets/fonts/
+    - assets/images/
   fonts:
     - family: SF_Pro_Display
       fonts:
