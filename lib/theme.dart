@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:effective_flutter_lab/app_colors.dart';
+import 'package:effective_flutter_lab/constants.dart';
 
 ThemeData returnMainTheme() {
   return ThemeData(
@@ -13,6 +13,14 @@ ThemeData returnMainTheme() {
       padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 12.0),
     ),
     iconTheme: const IconThemeData(color: AppColors.green),
+    textTheme: TextTheme(
+      titleLarge: AppFonts.titleLarge,
+      titleMedium: AppFonts.titleMedium,
+      titleSmall: AppFonts.titleSmall,
+      bodyLarge: AppFonts.bodyLarge,
+      bodyMedium: AppFonts.bodyMedium,
+      bodySmall: AppFonts.bodySmall,
+    ),
     scaffoldBackgroundColor: AppColors.lightGray,
   );
 }
