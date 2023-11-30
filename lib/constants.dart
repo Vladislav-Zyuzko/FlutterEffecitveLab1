@@ -1,4 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:effective_flutter_lab/models/Service.dart';
+
+final List<Service> servicesList = [
+  Service(
+    imagePath: "assets/images/prime.png",
+    title: "СберПрайм",
+    description: "Платеж 9 июля",
+    cost: '199 ₽ в месяц',
+  ),
+  Service(
+    imagePath: "assets/images/percent_fill.png",
+    title: "Переводы",
+    description: "Автопродление 21 августа",
+    cost: '199 ₽ в месяц',
+  ),
+];
 
 const interestsList = [
   "Еда",
@@ -53,6 +69,8 @@ abstract class AppColors {
   static const darkGreen = Color(0xFF068441);
   static const lightGray = Color(0xFFFAFAFA);
   static const gray = Color(0x7A1D1D25);
+  static const blueGray = Color(0x114F4F6C);
+  static const redGray = Color(0x14000000);
 
   static final black8 = Colors.black.withOpacity(0.08);
   static final black12 = Colors.black.withOpacity(0.12);
