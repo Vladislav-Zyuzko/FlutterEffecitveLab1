@@ -4,7 +4,7 @@ import 'package:effective_flutter_lab/constants.dart';
 ThemeData returnMainTheme() {
   return ThemeData(
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.white),
-    brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColors.lightGray,
     cardTheme: const CardTheme(
       color: AppColors.white,
     ),
@@ -12,7 +12,8 @@ ThemeData returnMainTheme() {
       backgroundColor: AppColors.black8,
       padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 12.0),
     ),
-    iconTheme: const IconThemeData(color: AppColors.green),
+    primaryColor: AppColors.green,
+    iconTheme: const IconThemeData(color: Colors.red),
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
@@ -21,6 +22,14 @@ ThemeData returnMainTheme() {
       bodyMedium: AppFonts.bodyMedium,
       bodySmall: AppFonts.bodySmall,
     ),
-    scaffoldBackgroundColor: AppColors.lightGray,
+    tabBarTheme: TabBarTheme(
+      labelColor: AppColors.black,
+      labelStyle: AppFonts.bodyLarge,
+      unselectedLabelColor: AppColors.black55,
+      unselectedLabelStyle: AppFonts.bodyMedium,
+      indicator: const UnderlineTabIndicator(
+        borderSide: BorderSide(width: 2, color: AppColors.darkGreen)
+      ),
+    ),
   );
 }

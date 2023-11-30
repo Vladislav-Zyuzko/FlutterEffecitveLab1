@@ -1,21 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/theme.dart';
+import 'package:effective_flutter_lab/screens/home_page.dart';
 
 void main() {
   runApp(MaterialApp(
     theme: returnMainTheme(),
-    home: const MyApp(),
+    home: const HomePage(),
   ));
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(leading: const Icon(Icons.speed_rounded, color: Colors.green)),
-      body: Text("Hello World!", style: Theme.of(context).textTheme.titleLarge),
-    );
-  }
 }

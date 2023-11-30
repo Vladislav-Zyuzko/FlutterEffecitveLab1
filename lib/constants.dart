@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 const interestsList = [
-  "Еда", "Самообразование", "Технологии", "Дом", "Досуг", "Забота о себе", "Наука",
+  "Еда",
+  "Самообразование",
+  "Технологии",
+  "Дом",
+  "Досуг",
+  "Забота о себе",
+  "Наука",
 ];
 
 abstract class AppFonts {
@@ -24,12 +30,14 @@ abstract class AppFonts {
       fontFamily: 'SF_Pro_Text',
       fontWeight: FontWeight.w500,
       fontSize: 16,
-      color: AppColors.black);
+      color: AppColors.black,
+      letterSpacing: -0.4);
   static final bodyMedium = TextStyle(
       fontFamily: 'SF_Pro_Text',
       fontWeight: FontWeight.w500,
       fontSize: 16,
-      color: AppColors.black55);
+      color: AppColors.black55,
+      letterSpacing: -0.4);
   static final bodySmall = TextStyle(
       fontFamily: 'SF_Pro_Text',
       fontWeight: FontWeight.w500,
@@ -44,9 +52,10 @@ abstract class AppColors {
   static const green = Color(0xFF08A652);
   static const darkGreen = Color(0xFF068441);
   static const lightGray = Color(0xFFFAFAFA);
+  static const gray = Color(0x7A1D1D25);
 
   static final black8 = Colors.black.withOpacity(0.08);
   static final black12 = Colors.black.withOpacity(0.12);
-  static final black35 = Colors.black.withOpacity(0.32);
+  static final black32 = Colors.black.withOpacity(0.32);
   static final black55 = Colors.black.withOpacity(0.55);
 }
