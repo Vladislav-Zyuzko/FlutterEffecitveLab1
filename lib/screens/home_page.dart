@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/constants.dart';
 import 'package:effective_flutter_lab/app_strings.dart';
+
 import 'package:effective_flutter_lab/ui_components/SberCard.dart';
+import 'package:effective_flutter_lab/ui_components/SberTitleBlock.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -114,15 +116,10 @@ class HomePage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(top: 30),
                   ),
-                  Text(
-                    homeText["connectedFunctionsTitle"],
-                    style: AppFonts.titleMedium,
+                  SberTitleBlock(
+                    title: homeText["connectedFunctionsTitle"], 
+                    titleDescription: homeText["connectedFunctionsDescription"]
                   ),
-                  const Padding(
-                    padding: EdgeInsets.only(top: 8),
-                  ),
-                  Text(homeText["connectedFunctionsDescription"],
-                      style: AppFonts.bodySmall),
                   const Padding(
                     padding: EdgeInsets.only(top: 20),
                   ),
@@ -141,6 +138,11 @@ class HomePage extends StatelessWidget {
                         );
                       },
                     ),
+                  ),
+                  const Padding(padding: EdgeInsets.only(top: 46),),
+                  SberTitleBlock(
+                    title: homeText["ratesAndLimitsTitle"], 
+                    titleDescription: homeText["ratesAndLimitsDescription"]
                   ),
                 ],
               ),
