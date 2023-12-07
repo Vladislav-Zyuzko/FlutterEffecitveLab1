@@ -6,7 +6,7 @@ class Service {
   final String description;
   final String cost;
 
-  Service({
+  const Service({
     required this.imagePath,
     required this.title,
     required this.description,

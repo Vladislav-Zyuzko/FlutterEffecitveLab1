@@ -4,6 +4,7 @@ import 'package:effective_flutter_lab/app_strings.dart';
 
 import 'package:effective_flutter_lab/ui_components/SberCard.dart';
 import 'package:effective_flutter_lab/ui_components/SberTitleBlock.dart';
+import 'package:effective_flutter_lab/ui_components/SberRate.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -109,7 +110,7 @@ class HomePage extends StatelessWidget {
             ),
             SliverToBoxAdapter(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -117,13 +118,13 @@ class HomePage extends StatelessWidget {
                     padding: EdgeInsets.only(top: 30),
                   ),
                   SberTitleBlock(
-                    title: homeText["connectedFunctionsTitle"], 
-                    titleDescription: homeText["connectedFunctionsDescription"]
-                  ),
+                      title: homeText["connectedFunctionsTitle"],
+                      titleDescription:
+                          homeText["connectedFunctionsDescription"]),
                   const Padding(
                     padding: EdgeInsets.only(top: 20),
                   ),
-                  Container(
+                  SizedBox(
                     height: 132,
                     child: ListView.separated(
                       clipBehavior: Clip.none,
@@ -139,11 +140,27 @@ class HomePage extends StatelessWidget {
                       },
                     ),
                   ),
-                  const Padding(padding: EdgeInsets.only(top: 46),),
-                  SberTitleBlock(
-                    title: homeText["ratesAndLimitsTitle"], 
-                    titleDescription: homeText["ratesAndLimitsDescription"]
+                  const Padding(
+                    padding: EdgeInsets.only(top: 46),
                   ),
+                  SberTitleBlock(
+                      title: homeText["ratesAndLimitsTitle"],
+                      titleDescription: homeText["ratesAndLimitsDescription"]),
+                  const Padding(padding: EdgeInsets.only(top: 12),),
+                  ListView.separated(
+                    padding: EdgeInsets.zero,
+                    separatorBuilder: (BuildContext context, int index) {
+                      return const Padding(
+                          padding: EdgeInsets.only(left: 50),
+                          child: Divider(),
+                        );
+                    },
+                    shrinkWrap: true,
+                    itemCount: ratesList.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return SberRate(rate: ratesList[index]);
+                    },
+                  )
                 ],
               ),
             )),

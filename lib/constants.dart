@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/models/Service.dart';
+import 'package:effective_flutter_lab/models/Rate.dart';
 
-final List<Service> servicesList = [
+const List<Service> servicesList = [
   Service(
     imagePath: "assets/images/prime.png",
     title: "СберПрайм",
@@ -13,6 +14,23 @@ final List<Service> servicesList = [
     title: "Переводы",
     description: "Автопродление 21 августа",
     cost: '199 ₽ в месяц',
+  ),
+];
+
+const List<Rate> ratesList = [
+  Rate(
+    imagePath: "assets/images/speedometer.png",
+    title: "Изменить суточный лимит",
+    description: "На платежи и переводы",
+  ),
+  Rate(
+    imagePath: "assets/images/percent.png",
+    title: "Переводы без комиссии",
+    description: "Показать остаток в этом месяце",
+  ),
+  Rate(
+    imagePath: "assets/images/arrow.png",
+    title: "Информация о тарифах \nи лимитах",
   ),
 ];
 

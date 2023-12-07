@@ -12,8 +12,14 @@ ThemeData returnMainTheme() {
       backgroundColor: AppColors.black8,
       padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 12.0),
     ),
+    dividerColor: AppColors.black12,
+    dividerTheme: DividerThemeData(
+      color: AppColors.black12,
+      thickness: 1,
+      space: 1
+    ),
     primaryColor: AppColors.green,
-    iconTheme: const IconThemeData(color: Colors.red),
+    iconTheme: const IconThemeData(color: AppColors.green),
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
@@ -31,5 +37,8 @@ ThemeData returnMainTheme() {
         borderSide: BorderSide(width: 2, color: AppColors.darkGreen)
       ),
     ),
+    listTileTheme: const ListTileThemeData(
+      contentPadding: EdgeInsets.all(0),
+    )
   );
 }

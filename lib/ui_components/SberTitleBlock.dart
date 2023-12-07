@@ -11,15 +11,18 @@ class SberTitleBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(title, style: AppFonts.titleMedium,),
-        const Padding(
-          padding: EdgeInsets.only(top: 8),
-        ),
-        Text(titleDescription, style: AppFonts.bodySmall),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(right: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: AppFonts.titleMedium,),
+          const Padding(
+            padding: EdgeInsets.only(top: 8),
+          ),
+          Text(titleDescription, style: AppFonts.bodySmall),
+        ],
+      ),
     );
   }
 }
