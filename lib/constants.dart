@@ -36,7 +36,7 @@ const List<Rate> ratesList = [
 
 const interestsList = [
   "Еда",
-  "Самообразование",
+  "Саморазвитие",
   "Технологии",
   "Дом",
   "Досуг",
@@ -77,6 +77,13 @@ abstract class AppFonts {
       fontWeight: FontWeight.w500,
       fontSize: 14,
       color: AppColors.black55);
+  static const lableMedim = TextStyle(
+    fontFamily: 'SF_Pro_Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    color: AppColors.black,
+    letterSpacing: -0.41,
+  );
 }
 
 abstract class AppColors {

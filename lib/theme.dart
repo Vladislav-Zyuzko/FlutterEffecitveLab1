@@ -9,8 +9,15 @@ ThemeData returnMainTheme() {
       color: AppColors.white,
     ),
     chipTheme: ChipThemeData(
+      labelStyle: AppFonts.lableMedim,
+      showCheckmark: false,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+          side: const BorderSide(color: Colors.transparent)
+      ),
       backgroundColor: AppColors.black8,
-      padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 12.0),
+      padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 4.0),
+      selectedColor: AppColors.green,
     ),
     dividerColor: AppColors.black12,
     dividerTheme: DividerThemeData(
@@ -20,6 +27,9 @@ ThemeData returnMainTheme() {
     ),
     primaryColor: AppColors.green,
     iconTheme: const IconThemeData(color: AppColors.green),
+    listTileTheme: const ListTileThemeData(
+      contentPadding: EdgeInsets.all(0),
+    ),
     textTheme: TextTheme(
       titleLarge: AppFonts.titleLarge,
       titleMedium: AppFonts.titleMedium,
@@ -37,8 +47,5 @@ ThemeData returnMainTheme() {
         borderSide: BorderSide(width: 2, color: AppColors.darkGreen)
       ),
     ),
-    listTileTheme: const ListTileThemeData(
-      contentPadding: EdgeInsets.all(0),
-    )
   );
 }

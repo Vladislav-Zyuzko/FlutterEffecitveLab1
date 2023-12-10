@@ -5,6 +5,7 @@ import 'package:effective_flutter_lab/app_strings.dart';
 import 'package:effective_flutter_lab/ui_components/SberCard.dart';
 import 'package:effective_flutter_lab/ui_components/SberTitleBlock.dart';
 import 'package:effective_flutter_lab/ui_components/SberRate.dart';
+import 'package:effective_flutter_lab/ui_components/SberChip.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -145,22 +146,41 @@ class HomePage extends StatelessWidget {
                   ),
                   SberTitleBlock(
                       title: homeText["ratesAndLimitsTitle"],
-                      titleDescription: homeText["ratesAndLimitsDescription"]),
-                  const Padding(padding: EdgeInsets.only(top: 12),),
+                      titleDescription: homeText["ratesAndLimitsDescription"]
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 12),
+                  ),
                   ListView.separated(
                     padding: EdgeInsets.zero,
                     separatorBuilder: (BuildContext context, int index) {
                       return const Padding(
-                          padding: EdgeInsets.only(left: 50),
-                          child: Divider(),
-                        );
+                        padding: EdgeInsets.only(left: 50),
+                        child: Divider(),
+                      );
                     },
                     shrinkWrap: true,
                     itemCount: ratesList.length,
                     itemBuilder: (BuildContext context, int index) {
                       return SberRate(rate: ratesList[index]);
                     },
-                  )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 46),
+                  ),
+                  SberTitleBlock(
+                      title: homeText["interestsTitle"],
+                      titleDescription: homeText["interestsDescription"]
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 12),
+                  ),
+                  Wrap(
+                    spacing: 8.0,
+                    children: interestsList.map((interest) {
+                      return SberChip(title: interest);
+                    }).toList(),
+                  ),
                 ],
               ),
             )),
