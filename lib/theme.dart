@@ -13,7 +13,7 @@ ThemeData returnMainTheme() {
       showCheckmark: false,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: const BorderSide(color: Colors.transparent)
+          side: const BorderSide(color: Color.fromARGB(0, 163, 111, 111))
       ),
       backgroundColor: AppColors.black8,
       padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 4.0),

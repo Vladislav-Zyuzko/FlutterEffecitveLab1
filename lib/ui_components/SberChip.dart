@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:effective_flutter_lab/constants.dart';
 
 class SberChip extends StatefulWidget {
   final String title;

@@ -9,9 +9,7 @@ class SberCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 216,
-      height: 130,
+    return Ink(
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(12),
@@ -27,34 +25,48 @@ class SberCard extends StatelessWidget {
             blurRadius: 10,
             offset: Offset(0, 2),
             spreadRadius: 0,
-          )
-        ]
+          ),
+        ],
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Image.asset(
-                  service.imagePath,
-                  width: 36,
-                  height: 36,
-                ),
-                const Padding(padding: EdgeInsets.only(left: 12)),
-                Text(
-                  service.title,
-                  style: AppFonts.bodyLarge,
-                )
-              ],
-            ),
-            const Padding(
-              padding: EdgeInsets.only(top: 22),
-            ),
-            Text(service.description, style: AppFonts.titleSmall,),
-            Text(service.cost, style: AppFonts.bodySmall),
-          ],
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: () {
+          // Действия, которые должны произойти при клике на виджет
+        },
+        child: Container(
+          width: 216,
+          height: 130,
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Image.asset(
+                    service.imagePath,
+                    width: 36,
+                    height: 36,
+                  ),
+                  const Padding(padding: EdgeInsets.only(left: 12)),
+                  Text(
+                    service.title,
+                    style: AppFonts.bodyLarge,
+                  ),
+                ],
+              ),
+              const Padding(
+                padding: EdgeInsets.only(top: 22),
+              ),
+              Text(
+                service.description,
+                style: AppFonts.titleSmall,
+              ),
+              Text(
+                service.cost,
+                style: AppFonts.bodySmall,
+              ),
+            ],
+          ),
         ),
       ),
     );
