@@ -10,6 +10,9 @@ class SberRate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: () {
+        //TBD
+      },
       title: Text(
         rate.title,
         style: AppFonts.bodyLarge,
