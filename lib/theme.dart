@@ -43,8 +43,9 @@ ThemeData returnMainTheme() {
       labelStyle: AppFonts.bodyLarge,
       unselectedLabelColor: AppColors.black55,
       unselectedLabelStyle: AppFonts.bodyMedium,
+      indicatorSize: TabBarIndicatorSize.label,
       indicator: const UnderlineTabIndicator(
-        borderSide: BorderSide(width: 2, color: AppColors.darkGreen)
+        borderSide: BorderSide(width: 2, color: AppColors.darkGreen),
       ),
     ),
   );
