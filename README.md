@@ -1,16 +1,33 @@
-# effective_flutter_lab
+# Описание проекта
 
-A new Flutter project.
 
-## Getting Started
+<div class="container" style="margin-bottom: 25px">
+  <img src="assets/images/Effective.png" style="margin-right: 25px">
+  <img src="assets/images/OmSTU.png" style="margin-right: 25px">
+  <img src="assets/images/Flutter.png">
+</div>
 
-This project is a starting point for a Flutter application.
+Данная работа была выполнена в рамках прохождения курса «Профессиональная разработка мобильных приложений» от компании Effective с целью получения первичных навыков в работе с фреймворком для кроссплатформенной разработки мобильных приложений __Flutter__.
 
-A few resources to get you started if this is your first Flutter project:
+Средствами представленной технологии необходимо было реализовать следующий экран:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<div style="display: flex; justify-content: center;">
+    <img src="assets/images/task.png" width="500px">
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+&NewLine;
+В результате работы с помощью фреймворка __Flutter__ было получено приложение с двумя экранами (настройки представлены в виде пустого экрана и добавлены с целью демострации функцииональности AppBar-а):
+&NewLine;
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px">
+    <img src="assets/images/screen1.png" width="250px"> <img src="assets/images/screen2.png" width="250px"> <img src="assets/images/screen3.png" width="250px">
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+    Также был сгенерирован APK файл: 
+    <a href="EffectiveFlutterLab.apk" download>
+        <img src="assets/images/download.png" style="width:100px; margin-left: 15;">
+    </a>
+</div>
+
+```Используемая версия Flutter - 3.16.3```
