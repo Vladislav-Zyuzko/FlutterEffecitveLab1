@@ -68,6 +68,7 @@ class HomePage extends StatelessWidget {
                         padding: EdgeInsets.only(top: 12),
                       ),
                       ListView.separated(
+                        physics: const NeverScrollableScrollPhysics(),
                         padding: EdgeInsets.zero,
                         separatorBuilder: (BuildContext context, int index) {
                           return const Padding(
