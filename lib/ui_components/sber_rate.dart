@@ -23,10 +23,13 @@ class SberRate extends StatelessWidget {
               style: AppFonts.bodySmall,
             )
           : null,
-      leading: Image.asset(
-        rate.imagePath,
-        width: 36,
-        height: 36,
+      leading: Padding(
+        padding: const EdgeInsets.only(left: 16),
+        child: Image.asset(
+          rate.imagePath,
+          width: 36,
+          height: 36,
+        ),
       ),
       trailing: Padding(
         padding: EdgeInsets.zero,
