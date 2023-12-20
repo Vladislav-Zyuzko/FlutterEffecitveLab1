@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/constants.dart';
 
-ThemeData returnMainTheme() {
-  return ThemeData(
+final ThemeData lightTheme = ThemeData(
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.white),
     scaffoldBackgroundColor: AppColors.lightGray,
     cardTheme: const CardTheme(
@@ -48,5 +47,4 @@ ThemeData returnMainTheme() {
         borderSide: BorderSide(width: 2, color: AppColors.darkGreen),
       ),
     ),
-  );
-}
+);

@@ -4,7 +4,7 @@ import 'package:effective_flutter_lab/screens/home_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: returnMainTheme(),
+    theme: lightTheme,
     home: const HomePage(),
   ));
 }
