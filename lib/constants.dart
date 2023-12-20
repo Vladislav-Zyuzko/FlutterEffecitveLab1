@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:effective_flutter_lab/models/Service.dart';
-import 'package:effective_flutter_lab/models/Rate.dart';
+import 'package:effective_flutter_lab/models/service.dart';
+import 'package:effective_flutter_lab/models/rate.dart';
 
 const List<Service> servicesList = [
   Service(

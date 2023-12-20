@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/constants.dart';
-import 'package:effective_flutter_lab/models/Rate.dart';
+import 'package:effective_flutter_lab/models/rate.dart';
 
 class SberRate extends StatelessWidget {
   final Rate rate;

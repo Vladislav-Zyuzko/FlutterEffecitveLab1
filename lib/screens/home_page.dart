@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:effective_flutter_lab/constants.dart';
 import 'package:effective_flutter_lab/app_strings.dart';
 
-import 'package:effective_flutter_lab/ui_components/SberAppBar.dart';
-import 'package:effective_flutter_lab/ui_components/SberCard.dart';
-import 'package:effective_flutter_lab/ui_components/SberTitleBlock.dart';
-import 'package:effective_flutter_lab/ui_components/SberRate.dart';
-import 'package:effective_flutter_lab/ui_components/SberChip.dart';
+import 'package:effective_flutter_lab/ui_components/sber_app_bar.dart';
+import 'package:effective_flutter_lab/ui_components/sber_card.dart';
+import 'package:effective_flutter_lab/ui_components/sber_title_block.dart';
+import 'package:effective_flutter_lab/ui_components/sber_rate.dart';
+import 'package:effective_flutter_lab/ui_components/sber_chip.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
