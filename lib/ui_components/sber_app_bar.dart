@@ -7,8 +7,6 @@ class SberAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Map homeText = AppStrings.text;
-
     return SliverAppBar(
       pinned: true,
       backgroundColor: AppColors.white,
@@ -28,7 +26,7 @@ class SberAppBar extends StatelessWidget {
           title: Padding(
             padding: const EdgeInsets.only(bottom: 52, right: 71),
             child: Text(
-              homeText['username'],
+              AppStrings.username,
               style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
@@ -91,11 +89,11 @@ class SberAppBar extends StatelessWidget {
           ),
         ),
       ),
-      bottom: TabBar.secondary(
+      bottom: const TabBar.secondary(
         indicatorSize: TabBarIndicatorSize.tab,
         tabs: [
-          Tab(text: homeText["profileLabel"]),
-          Tab(text: homeText["settingsLabel"]),
+          Tab(text: AppStrings.profileLabel),
+          Tab(text: AppStrings.settingsLabel),
         ],
       ),
     );

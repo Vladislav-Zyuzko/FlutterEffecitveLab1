@@ -30,7 +30,7 @@ const List<Rate> ratesList = [
   ),
   Rate(
     imagePath: "assets/images/arrow.png",
-    title: "Информация о тарифах \nи лимитах",
+    title: "Информация о тарифах и лимитах",
   ),
 ];
 

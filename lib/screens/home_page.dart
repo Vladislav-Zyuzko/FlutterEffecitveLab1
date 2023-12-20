@@ -13,8 +13,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Map homeText = AppStrings.text;
-
     return DefaultTabController(
       length: 2,
       child: Scaffold(
@@ -36,10 +34,10 @@ class HomePage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 30),
                       ),
-                      SberTitleBlock(
-                          title: homeText["connectedFunctionsTitle"],
+                      const SberTitleBlock(
+                          title: AppStrings.connectedFunctionsTitle,
                           titleDescription:
-                              homeText["connectedFunctionsDescription"]),
+                              AppStrings.connectedFunctionsDescription),
                       const Padding(
                         padding: EdgeInsets.only(top: 20),
                       ),
@@ -62,10 +60,10 @@ class HomePage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 46),
                       ),
-                      SberTitleBlock(
-                          title: homeText["ratesAndLimitsTitle"],
+                      const SberTitleBlock(
+                          title: AppStrings.ratesAndLimitsTitle,
                           titleDescription:
-                              homeText["ratesAndLimitsDescription"]),
+                              AppStrings.ratesAndLimitsDescription),
                       const Padding(
                         padding: EdgeInsets.only(top: 12),
                       ),
@@ -86,9 +84,9 @@ class HomePage extends StatelessWidget {
                       const Padding(
                         padding: EdgeInsets.only(top: 46),
                       ),
-                      SberTitleBlock(
-                          title: homeText["interestsTitle"],
-                          titleDescription: homeText["interestsDescription"]),
+                      const SberTitleBlock(
+                          title: AppStrings.interestsTitle,
+                          titleDescription: AppStrings.interestsDescription),
                       const Padding(
                         padding: EdgeInsets.only(top: 12),
                       ),
