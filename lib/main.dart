@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:effective_flutter_lab/theme.dart';
+import 'package:effective_flutter_lab/screens/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      
-    );
-  }
+  runApp(MaterialApp(
+    theme: lightTheme,
+    home: const HomePage(),
+  ));
 }
